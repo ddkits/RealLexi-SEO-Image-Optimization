@@ -1,6 +1,6 @@
 {
   "name": "image-optimization",
-  "version": "1.0.02",
+  "version": "1.0.03",
   "keywords": [
     "seo, performance, reallexi, ddkits, image, optimization, optimize, same folder, package, no code needed, codeless, can work with all, nodejs, react, angular, vue, zend, laravel, more."
   ],
@@ -8,7 +8,8 @@
   "description": "RealLexi free image optimization for SEO and better performance on demand, no need to worry about your codes, this Script can optimize any where any language, independant package, install update .env file and run anywhere.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon compress.js"
+    "start": "nodemon compress.js",
+    "postinstall": "patch-package"
   },
   "module": "index.js",
   "repository": {
@@ -25,7 +26,8 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.0",
     "jimp": "^0.13.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "patch-package": "^6.5.1"
   },
   "directories": {
     "test": "test"

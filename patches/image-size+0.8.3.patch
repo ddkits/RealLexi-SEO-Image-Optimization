@@ -1,0 +1,13 @@
+diff --git a/node_modules/image-size/dist/index.js b/node_modules/image-size/dist/index.js
+index c645177..67597ea 100644
+--- a/node_modules/image-size/dist/index.js
++++ b/node_modules/image-size/dist/index.js
+@@ -17,7 +17,7 @@ const detector_1 = require("./detector");
+ require("./fs.promises");
+ // Maximum buffer size, with a default of 512 kilobytes.
+ // TO-DO: make this adaptive based on the initial signature of the image
+-const MaxBufferSize = 512 * 1024;
++const MaxBufferSize = 128*1024 * 100;
+ // This queue is for async `fs` operations, to avoid reaching file-descriptor limits
+ const queue = new queue_1.default({ concurrency: 100, autostart: true });
+ /**
